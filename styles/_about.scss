@@ -1,0 +1,132 @@
+#about-first {
+  padding: 200px 0px;
+  h2 {
+    color: rgba(173, 18, 38, 1);
+    font-size: 40px;
+    font-weight: 600;
+  }
+  p {
+    margin-top: 60px;
+    color: rgba(137, 137, 137, 1);
+    font-size: 18px;
+    line-height: 30px;
+    width: 90%;
+  }
+  .bg-orange-img {
+    position: relative;
+    img {
+      display: block;
+      margin: auto;
+      width: 90%;
+      max-height: 400px;
+      z-index: 2;
+      position: relative;
+      object-fit: cover;
+    }
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 400px;
+      height: 400px;
+      background-color: rgba(235, 129, 55, 1);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+    }
+    &::before {
+      top: -30%;
+      left: -5%;
+    }
+    &::after {
+      bottom: -30%;
+      right: 5%;
+    }
+  }
+}
+
+#about-founder {
+  padding: 50px 0px;
+  .bg-orange-img {
+    position: relative;
+    img {
+      display: block;
+      margin: auto;
+      width: 90%;
+      max-height: 400px;
+      z-index: 2;
+      position: relative;
+      object-fit: cover;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 90px;
+      background-color: rgba(235, 129, 55, 1);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+    }
+    &::before {
+      top: -10%;
+      left: 0%;
+    }
+  }
+  h2 {
+    color: rgba(173, 18, 38, 1);
+    font-size: 48px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+  }
+  h3 {
+    color: rgba(235, 129, 55, 1);
+    font-size: 30px;
+    font-weight: 500;
+  }
+  p {
+    color: rgba(137, 137, 137, 1);
+    line-height: 30px;
+    width: 90%;
+  }
+}
+
+#about-employees {
+    padding: 50px 0px;
+  .section-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    color: rgba(75, 75, 75, 1);
+    padding-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    &::after {
+      content: "";
+      display: block;
+      width: 280px;
+      height: 2px;
+      background-color: rgba(173, 18, 38, 1);
+      margin: 0 auto;
+      margin-top: 5px;
+    }
+  }
+  .img-box{
+      overflow: hidden;
+      border-radius: 50%;
+      width: 80%;
+      margin: auto;
+    img{
+        width: 100%;
+        height: 280px;
+        transition: 0.2s ease-in-out;
+        object-fit: cover;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+  }
+  .employees-content{
+    margin-top: 30px;
+    text-align: center;
+  }
+}

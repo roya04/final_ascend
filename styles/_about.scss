@@ -1,3 +1,33 @@
+.initial {
+  width: 100%;
+  height: 20vh;
+  background-image: url(../assets/aboutInitial.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0, .4);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+          font-size: 24px;
+          margin: 0;
+      }
+  }
+
+}
+
+
 #about-first {
   padding: 200px 0px;
   h2 {
@@ -6,7 +36,6 @@
     font-weight: 600;
   }
   p {
-    margin-top: 60px;
     color: rgba(137, 137, 137, 1);
     font-size: 18px;
     line-height: 30px;
@@ -116,8 +145,8 @@
       width: 80%;
       margin: auto;
     img{
+      height: 280px;
         width: 100%;
-        height: 280px;
         transition: 0.2s ease-in-out;
         object-fit: cover;
         &:hover{
